@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-color: #3f0ec7;
-    padding-top: 50px;
 }
 
 /* Apply Poppins font */
@@ -24,6 +22,7 @@ body {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* Add margin to top for spacing */
 }
 
 /* Heading styles */
@@ -50,4 +49,71 @@ p {
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #3f0ec7;
+    outline: none;
+}
+
+/* Submit button styles */
+button {
+    padding: 12px 20px;
+    background-color: #3f0ec7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a2fc0;
+}
+
+/* Form input field styles */
+input[type="text"], input[type="number"], button {
+    width: 100%; /* Make input and button full width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, label {
+        font-size: 1rem;
+    }
+
+    input[type="text"], input[type="number"], button {
+        font-size: 1rem;
+    }
 }
